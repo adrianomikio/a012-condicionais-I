@@ -1,11 +1,15 @@
-let nacionalidade = prompt("Qual a sua nacionalidade? Primeira letra maiúscula, por favor.")
+let nacionalidade = ["brasileira" || "argentina" || "uruguaia" || "chilena" || "colombiana"]
+let pedirNacionalidade = prompt("Qual é a sua nacionalidade?").toLowerCase()
 
-if(nacionalidade === "Brasileira" || "Argentina" || "Uruguaia" || "Colombiana" || "Chilena")
+console.log(pedirNacionalidade.includes(nacionalidade))
+
+
+if (pedirNacionalidade.includes(nacionalidade) === true)
 
 {
-    console.log(`Sua nacionalidade é: ${nacionalidade}.`)
+    console.log(`Sua nacionalidade é: ${pedirNacionalidade}.`)
 }
 
 else {
-    console.log("Nacionalidade não encontrada.")
+    console.log(`Nacionalidade ${pedirNacionalidade} não encontrada.`)
 }
